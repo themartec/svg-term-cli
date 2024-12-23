@@ -1,0 +1,8 @@
+node_modules
+lib
+*.tgz
+*.log
+.idea
+.DS_Store
+*-results.html
+*-ui.json

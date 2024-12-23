@@ -1,0 +1,83 @@
+{
+  "name": "@longnc/themartec-svg-term-cli",
+  "version": "1.0.0",
+  "description": "Share terminal sessions as razor-sharp animated SVG everywhere",
+  "bin": {
+    "svg-term": "lib/cli.js"
+  },
+  "files": [
+    "lib"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "format": "prettier src/**/*.ts --write && tslint --project . --fix",
+    "test": "jest"
+  },
+  "jest": {
+    "globals": {
+      "ts-jest": {
+        "skipBabel": true
+      }
+    },
+    "moduleFileExtensions": [
+      "ts",
+      "js",
+      "json"
+    ],
+    "transform": {
+      "^.+\\.tsx?$": "ts-jest"
+    },
+    "testRegex": ".*\\.test.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/themartec/svg-term-cli.git"
+  },
+  "keywords": [
+    "svg",
+    "asciinema",
+    "asciicast"
+  ],
+  "author": "Long Nguyen <long.nguyen@themartec.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/themartec/svg-term-cli/issues"
+  },
+  "homepage": "https://github.com/themartec/svg-term-cli#readme",
+  "dependencies": {
+    "@longnc/themartec-execa": "^1.0.0",
+    "@longnc/themartec-term-schemes": "^1.0.0",
+    "@marionebl/sander": "^0.6.1",
+    "chalk": "^5.4.1",
+    "command-exists": "^1.2.9",
+    "get-stdin": "^9.0.0",
+    "guess-terminal": "^1.0.0",
+    "meow": "^13.2.0",
+    "node-fetch": "^3.3.2",
+    "plist": "^3.1.0",
+    "svg-term": "^2.0.3",
+    "svgo": "^3.3.2",
+    "tempfile": "^5.0.0",
+    "tempy": "^3.1.0"
+  },
+  "devDependencies": {
+    "@types/chalk": "^2.2.4",
+    "@types/jest": "^29.5.14",
+    "@types/meow": "^6.0.0",
+    "@types/svgo": "^3.0.0",
+    "@types/tempfile": "^3.0.0",
+    "@types/tempy": "^0.3.0",
+    "@xmldom/xmldom": "^0.9.6",
+    "prettier": "^3.4.2",
+    "ts-jest": "^29.2.5",
+    "ts-node": "^10.9.2",
+    "tslint": "^6.1.3",
+    "tslint-config-prettier": "^1.18.0",
+    "tslint-xo": "^0.16.0",
+    "typescript": "^5.7.2"
+  },
+  "main": "index.js",
+  "directories": {
+    "example": "examples"
+  }
+}
