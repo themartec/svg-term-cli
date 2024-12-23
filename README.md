@@ -1,9 +1,5 @@
 > Share terminal sessions as razor-sharp animated SVG everywhere
 
-<p align="center">
-  <img width="600" src="https://cdn.rawgit.com/marionebl/svg-term-cli/1250f9c1/examples/parrot.svg">
-</p>
-
 > Example generated with `svg-term --cast 113643 --out examples/parrot.svg --window --no-cursor --from=4500`
 
 # svg-term-cli
@@ -17,7 +13,7 @@
 1. Install asciinema via: https://asciinema.org/docs/installation
 2. Install svg-term-cli:
       ```sh
-      npm install -g svg-term-cli
+      npm install -g @longnc/themartec-svg-term-cli
       ```
 
 ## Usage
